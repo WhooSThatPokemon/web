@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background:#346d86;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    font-family: system-ui, -apple-system;
+    font-style:normal;
+    color:#fff ;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 50px; 
+    font-weight: bold;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-family: system-ui, -apple-system;
+}
+
+nav ul li a {
+    color:#fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background: #1a556e;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:#fff;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background: #1c4655;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color:#346d86
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+.banner {
+    background:url(wood_wallpaper.jpg);
+    background-size: 100% 30%;  
+    width: 100%;
+    height:300px;
+    margin-top: 0;
+    border-top:0;
+}
+
+.banner ul{
+    height:10px; 
+    float:right
+}
+
+.banner h1 {
+    text-align: center; 
+    color:#fff; 
+    font-size: 95px; 
+    padding: 70px ;
+    font-family: fantasy;
+    font-weight: 550;
+}
+
+@media (max-width: 952px) {
+    .banner h1{
+        font-size: 80px;
+    }
+
+}
+@media (max-width: 858px){
+    .banner h1{
+        font-size: 70px;
+        padding-top: 15px;
+    }
+    .banner{
+        height: 200px;
+    }
+}
+
+.slogan p {
+    text-align: center;
+    color:#000000;  
+    font-size:40px;
+    font-family: system-ui, -apple-system;
+    padding: 60px;
+}
+
+@media (max-width: 952px) {
+    .slogan p{
+        font-size: 40px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media (max-width: 858px){
+    .slogan p {
+        font-size: 30px;
+        padding-right:15px;
+        padding-left: 15px;
+    }
+}
+
+.vyroba_banner {
+    background: url(D6_2017g2.jpg);
+    background-repeat: no-repeat;
+    vertical-align:top;
+    padding-top: 50px;
+    background-size: 100%;
+    height:300px;
+    margin-left:170px;
+    margin-right: 170px;
+
+}
+
+.vyroba_banner h2{
+    text-align: center;
+    color:#fff ;
+    font-size: 60px;
+    font-weight: 550;
+    font-family: fantasy;
+    padding:70px;
+}
+
+@media (max-width: 2000px){
+    .vyroba_banner{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .vyroba_banner{
+        margin-left: 90px;
+        margin-right: 90px;
+        height:250px;
+    }
+    .vyroba_banner h2{
+        font-size: 50px;
+        text-align: center;
+        padding-top:30px;
+    }
+    
+}
+@media (max-width: 858px){
+    .vyroba_banner h2{
+        font-size: 40px;
+        padding-top: 1px;
+    }
+    .vyroba_banner{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .vyroba_banner h2{
+        font-size: 30px;
+        margin-top: 20px;
+        
+        
+    }
+    .vyroba_banner{
+        margin: left 30px;
+        margin-right: 30px;
+        height: 150px;
+        margin-bottom: 0;
+    }
+}
+
+.opravy_banner {
+    background: url("guitar1.jpeg");
+    background-repeat: no-repeat;
+    vertical-align:bottom;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-size: 100%; 
+    height: 300px;
+    margin-left:170px;
+    margin-right: 170px;;
+}
+
+
+.opravy_banner h2 {
+    text-align: center;
+    color:#fff;
+    font-size: 60px;
+    font-weight: 550;
+    font-family: fantasy;
+    padding:120px;
+}
+
+@media (max-width: 2000px){
+    .vyroba_banner{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .opravy_banner{
+        margin-left: 90px;
+        margin-right: 90px;
+        height:250px;
+    }
+    .opravy_banner h2{
+        font-size: 50px;
+    }
+    
+}
+@media (max-width: 858px){
+    .opravy_banner h2{
+        font-size: 40px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .opravy_banner{
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 150px;
+        margin-top:40px;
+    }
+}
+
+
+
+a:link,a:visited{
+    color:#fff;
+}
+
+.zahlavi p{
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: system-ui, -apple-system;
+    text-align:center;
+
+}
+
+hr {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+    margin-top:50px;
+}   
+
+.zahlavi a{
+    color:#000000;
+}
+.zahlavi a:hover{
+    background:none;
+    color:#a818d8;
+}
+
+.kontakt a{
+    color:#000000;
+}
+.kontakt a:hover{
+    background:none;
+    color:#c020f1;
+}
+.kontakt i{
+    margin-top:40px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.text h1{
+    text-align: center;
+    font-size:45px;
+    padding-top:70px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    font-family:system-ui,-apple-system;
+}
+
+.text h2{
+    text-align: center;
+    font-size:35px;
+    padding-top:40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    font-family:system-ui,-apple-system;
+}
+
+
+
+.text ol{
+    font-family:system-ui,-apple-system;
+    padding-left: 70px;
+    font-size: 20px;
+    position: relative;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+
+.text ol li{
+    list-style: upper-latins;
+    position: relative;
+    display: list-item;
+ }
+
+.kontakt p{
+    padding-top:0%; 
+    text-align: center;
+    font-family:system-ui,-apple-system;
+    font-size:30px;
+    padding-bottom:60px;
+}
+
+   
+.gallery-akusticke {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+.gallery-akusticke:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery-akusticke img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.text p {
+    text-align: left;
+    padding-left: 50px;
+    font-size:20px;
+    font-family: system-ui, -apple-system;
+}
+
+.text a{
+    color:#000000;
+}
+.text a:hover{
+    background:none;
+    color:#a818d8;
+}
+
+.text h3{
+    text-align: center;
+    font-family: system-ui, -apple-system;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size:25px;
+}
+
+hr{
+    margin-top:40px;
+    margin-bottom: 60px;
+}
+
+img {
+    width: 100%;
+  }
+  
+.masonry {
+      max-width: 60rem;
+      margin: 0 auto;
+      display: column;
+      columns: 3;
+      gap: 1em;
+    
+}
+
+.mansory > *{
+    break-inside: avoid;
+    margin-bottom: 1em;
+}
+
+
+@supports (grid-template-rows: mansory){
+    .masonry {
+        display: grid;
+        gap: 1em;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: mansory; 
+    }
+
+    .manosory > * {
+        margin-bottom: 0em;
+    }
+}
+
+  .mItem{
+    grid-column: span 2;
+  }
+  
+  .masonry .mItem {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+
+.stepan img {
+    height: 307px;
+    width: 400px;
+    padding-top: 40px;
+    margin-left:40px;
+}
